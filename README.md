@@ -44,9 +44,13 @@ Dynamite Backup Project
 3. 将Charts文件夹内的所有文件放入该目录中，用文件夹里的`__rena_index_2`文件覆盖掉本地的对应文件
 4. 即可离线游玩
 
-> 对于版本[大于等于11的安卓系统](https://source.android.com/devices/storage/fuse-passthrough)，如发现默认文件管理器无法打开`Android/data`，可以使用第三方文件管理器（如MT管理器）[获取访问权限](https://developer.android.com/guide/topics/providers/document-provider)，或利用Magisk等工具root后进行操作
+> 对于版本[大于等于11的安卓系统](https://source.android.com/devices/storage/fuse-passthrough)，在默认情况下只允许 文件（com.android.documentsui）应用访问`Andoird/data`目录，但是部分修改版Android屏蔽/隐藏了此应用，所以请根据你的设备实际情况选择解决方案，建议先使用系统预置的文件应用尝试范围此目录，部分设备会提供打开文件应用的入口
 
-> 由于Google在Android13修复了使用SAF访问`Android`及子目录的Bug，此方法可能无法在基于Android13的设备上正常工作，其他可行的方案是[Shizuku](https://shizuku.rikka.app/)/[Sui](https://github.com/RikkaApps/Sui)或者[Magisk](https://github.com/topjohnwu/Magisk)
+> 如发现你的设备未提供任何使用文件应用的方案，请参考下方的其他解决方案
+
+> （仅Android11和Android12可用）可以使用第三方文件管理器（如MT管理器）[获取访问权限](https://developer.android.com/guide/topics/providers/document-provider)，或利用Magisk等工具root后进行操作
+
+> 由于Google在Android13修复了使用SAF访问`Android`及子目录的Bug，此方法可能无法在基于Android13的设备上正常工作，其他可行的方案是[Shizuku](https://shizuku.rikka.app/)
 
 ### iOS (Sideloadly/AltStore)
 
